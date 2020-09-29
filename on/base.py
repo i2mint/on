@@ -226,7 +226,7 @@ class Store(KvPersister):
     """
     By store we mean key-value store. This could be files in a filesystem, objects in s3, or a database. Where and
     how the content is stored should be specified, but StoreInterface offers a dict-like interface to this.
-    ::
+
         __getitem__ calls: _id_of_key			                    _obj_of_data
         __setitem__ calls: _id_of_key		        _data_of_obj
         __delitem__ calls: _id_of_key
