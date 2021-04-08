@@ -2035,7 +2035,7 @@ def add_path_get(store=None, name=None, path_type: type = tuple):
 
     Returns: A wrapped store (class or instance), or a store wrapping decorator (if store is not specified)
 
-    See Also: `py2store.key_mappers.paths.PathGetMixin`, `py2store.key_mappers.paths.KeyPath`
+    See Also: `py2store.paths.PathGetMixin`, `py2store.paths.KeyPath`
 
     >>> # wrapping an instance
     >>> s = add_path_get({'a': {'b': {'c': 42}}})
@@ -2061,7 +2061,7 @@ def add_path_get(store=None, name=None, path_type: type = tuple):
     >>>
     >>> # a different kind of path?
     >>> # You can choose a different path_type, but sometimes (say both keys and key paths are strings)
-    >>> # you need to involve more tools. Like py2store.key_mappers.paths.KeyPath...
+    >>> # you need to involve more tools. Like py2store.paths.KeyPath...
     >>> from on.key_mappers.paths import KeyPath
     >>> from on import kv_wrap
     >>> SS = kv_wrap(KeyPath(path_sep='.'))(S)
